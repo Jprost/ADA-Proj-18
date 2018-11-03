@@ -1,21 +1,21 @@
-# ADA-Proj-18
+# Russian Trolls, Pols and Approval Rate
 
 # Abstract
-The motivations behind our research is highlighting the complex relations between food, wealth, education and obesity rate. By looking into the Open Food Fact Database, we can have information about the type of food, their content and nutritive value for different countries. Based on those values, we want to extract country-specific type of food. Simultaneously, we will compare these features with obesity rate, education and GDP per capita. Our goal is to understand whether wealthier countries tend to eat more healthily. Does a healthier diet correlates with a higher education level. We also want to highlight food trends, globally and per country: Is the number of vegan food increasing? Is the quantity of palm oil products decreasing?
-Even though the open food fact database only include the date a product was added to the database, we believe it gives an estimation of the time evolution of the trends as well. If this assumption holds true, we will do the mentioned above analysis over time.
+The outcome of the 2016 US election were a surprise, few experts predicted a Trump win. We believe that russian trolls had a influence on the outcome. To test this hypothesis, we will compare the IRA dataset and the "2016 Elections Poll". However, the scope of the tweets dataset does no stop to the election. The dataset was last updated on March 2018, so we can also draw insights from the presidency. We want to compare this with historical approval rates of Obama, since the trolls date all the way back from 2012.
 
 # Research questions
-We will assume that the open food fact database provides a good overview a country food scene. We will need to define what is a good meal. We want to understand if countries differ by food type and ingredients? Do countries have different average nutritive value?  To validate our hypothesis, we will analyse t
-How does quantity of healthy food correlates with wealth? How does quantity of healthy food correlates with education? 
+We want to start by defining the classes: what are the words associated with "RightTroll" or "LeftTroll". What is a typical right/left toll? Is there any influence of emojis on popularity ? Then we want to analyse the different effect of tweets authors and hashtags. Are there more influential trolls on the public opinion? It would also be interesting to see how that correlates with news coverage and political events. Is the tweet density related to actual events?
 
 # Dataset
-We will use the Open Food Fact dataset (https://world.openfoodfacts.org/)
-We will enrich it with obesity rates from (https://knoema.fr/WHOGDOBMIMay/who-global-database-on-body-mass-index-bmi)
-Education data and GDP per capita data from The World Bank (https://data.worldbank.org/topic/education - https://data.worldbank.org/indicator/NY.GDP.PCAP.CD )
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
+We will use the IRA dataset given in the course.
+We will use two additionals datasets from FiveThirtyEight: "2016 Election Poll" (https://www.kaggle.com/fivethirtyeight/datasets) and "Trump Approval Rates" (https://projects.fivethirtyeight.com/trump-approval-ratings/?ex_cid=rrpromo)
 
 # A list of internal milestones up until project milestone 2
-Add here a sketch of your planning for the next project milestone.
+* **By the 11th of November:** Filter/clean tweets (Non english) and select relevant ones (politically involved). Group the tweets by time period. Filter/Clean approvals rate: selecting Trump presidency. Filter/Clean 2016 election poll dataset. 
 
-# Questions for TAa
-Working with BSON files for the OpenFoodFact
+* **By the 18th of November:** Descriptive analysis on all datasets. Relevant features extraction on all dataset. And highlight dataset interactions (mostly on based on time relations). 
+Look for political events during the timespan (to maybe find a correlation with the tweets themes)
+
+* **By the 25th of November:** Clear project plan for the data story. Complete descriptive analysis.
+
+# Questions for TAs
