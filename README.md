@@ -1,7 +1,7 @@
 # Russian Trolls, Pols and Approval Rate
 
 # Abstract
-The outcome of the 2016 US election were a surprise, few experts predicted a Trump win. Since then, it has been revealed that the Russian might have had an influence on the election through their action on social media. To test this claim, we will compare the IRA dataset and the "2016 Elections Poll". Moreover, the scope of the tweets dataset does no stop to the election. The dataset was last updated on March 2018, so we can also draw insights from the current presidency. We want to compare this with historical approval rates of Obama, since the trolls date all the way back from 2012. Is their a correlation between the russian tweets and the approval raitings ?
+The outcome of the 2016 US election were a surprise, few experts predicted a Trump win. Since then, it has been revealed that the Russian might have had an influence on the election through their action on social media. To test this claim, we will compare the IRA dataset and the "2016 Elections Poll". Moreover, the scope of the tweets dataset does no stop to the election. The dataset was last updated on March 2018, so we can also draw insights from the current presidency. We want to compare this with historical approval rates of Obama, since the trolls date all the way back from 2012. Is there a correlation between the russian tweets and the approval raitings ?
 
 
 # Research questions
