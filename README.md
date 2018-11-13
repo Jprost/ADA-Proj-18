@@ -5,7 +5,17 @@ The outcome of the 2016 US election were a surprise, few experts predicted a Tru
 
 
 # Research questions
-We want to start by defining the classes: what are the words associated with "RightTroll" or "LeftTroll". What is a typical right/left toll? Is there any influence of emojis on popularity ? Then we want to analyse the different effect of tweets authors and hashtags. Are there more influential trolls on the public opinion? It would also be interesting to see how that correlates with news coverage and political events. Is the tweet density related to actual events?
+First, we will classify and understand the dataset.
+1. We want to start by defining the classes: what are the words associated with "RightTroll" or "LeftTroll". What is a typical right/left troll? 
+2. How can we quantify the popularity of tweet?
+3. What influences the popularity of a tweet? Is it the troll ID, the words used, actual events, the density of tweets?
+4. Quantify each variables. # of tweets by subject/target.
+
+Then, we want to understand the effect of the tweets.
+1. How does a tweet campaign correlates with approval ratings? Is it significant?
+2. Is the tweet effect more important during an election campaign or a president's tenure?
+3. Are tweets more influential against Trump, Obama or Clinton?
+
 
 # Dataset
 We will use the IRA dataset given in the course.
