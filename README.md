@@ -22,11 +22,23 @@ We will use the IRA dataset given in the course.
 We will use two additionals datasets from FiveThirtyEight: "2016 Election Poll" (https://www.kaggle.com/fivethirtyeight/datasets) and "Trump Approval Rates" (https://projects.fivethirtyeight.com/trump-approval-ratings/?ex_cid=rrpromo)
 
 # A list of internal milestones up until project milestone 2
-* **By the 11th of November:** Filter/clean tweets (Non english) and select relevant ones (politically involved). Group the tweets by time period. Filter/Clean approvals rate: selecting Trump presidency. Filter/Clean 2016 election poll dataset. 
+**Done** Filter/clean tweets (Non english) and select relevant ones (politically involved). Group the tweets by time period. Filter/Clean approvals rate: selecting Trump presidency. Filter/Clean 2016 election poll dataset. 
 
-* **By the 18th of November:** Descriptive analysis on all datasets. Relevant features extraction on all dataset. And highlight dataset interactions (mostly on based on time relations). 
-Look for political events during the timespan (to maybe find a correlation with the tweets themes)
+   * Data cleaning: the data is already pretty clean. We've just selected the relevant part (right and left english political trolls).              
+   * Tweet activity is represented as the number of tweet per day.
+   * We try to find events related to strong tweet acitvity (by googling).
+   * Election polls data are also cleaned. Focus was given on adjusted polls (rather than raw polls). As the data collected different polls per day (from different pollster), we average them by day. To smooth the graph of approval over time, we perform a rolling-mean over a week.
+   * Tweet activity, polls and polls variation are ploted (together and in scatter plots) to get insight in the realtion they might have. This is done for election and presidency time.
+   * Word analysis: the tweets are cleaned. Frequent words and hastags for both categories are extracted. A Word2Vec model is build to represent words as "concepts". Unfortunately, plotting words space on 2D (after PCA) does not enable to observe clear cleasters. But the model works well, as it can get similar words togethers. The tweets are then represented in the words space (clusters cannot be observed). A first draft of a classifier is done.
 
-* **By the 25th of November:** Clear project plan for the data story. Complete descriptive analysis.
+
+**To do:**:
+  * express the popularity of tweet (acccount for number of followers and retweets ?) 
+  * Explore correlation popularity vs polls
+  * explore differnet time-shift for the correlation (to confim that there are no correlations)
+  * improve the classifier
+  
+** 
+
 
 # Questions for TAs
