@@ -7,12 +7,10 @@ The outcome of the 2016 US election were a surprise, few experts predicted a Tru
 # Research questions
 First, we will classify and understand the dataset.
 1. We want to start by defining the classes: what are the words associated with "RightTroll" or "LeftTroll". What is a typical right/left troll? 
-2. How can we quantify the popularity of tweet?
-3. What influences the popularity of a tweet? Is it the troll ID, the words used, actual events, the density of tweets?
-4. Quantify each variables. # of tweets by subject/target.
+2. Quantify each variables. # of tweets by subject/target.
 
-Then, we want to understand the effect of the tweets.
-1. How does a tweet campaign correlates with approval ratings? Is it significant?
+Correlation: we want to understand the effect of the tweets.
+1. How does a tweet activity correlates with approval ratings? Is it significant?
 2. Is the tweet effect more important during an election campaign or a president's tenure?
 3. Are tweets more influential against Trump, Obama or Clinton?
 
