@@ -31,7 +31,7 @@ For now, we have no corelation.
    * Word analysis: the tweets are cleaned. Frequent words and hastags for both categories are extracted. A Word2Vec model is build to represent words as "concepts". Unfortunately, plotting words space on 2D (after PCA) does not enable to observe clear cleasters. But the model works well, as it can get similar words togethers. The tweets are then represented in the words space (clusters cannot be observed). A first draft of a classifier is done.
 
 
-**To do:**:
+**To do:**
   * explore different time-shift for the correlation (to confim that there are no correlations).
   * Try different variables that could correlate with the polls.
   * Focus more on the hastags. We are building a list of key events that happened during the campaign/ Trump presidency.
