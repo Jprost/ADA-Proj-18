@@ -31,6 +31,7 @@ For now, we have no corelation.
    * Word analysis: the tweets are cleaned. Frequent words and hastags for both categories are extracted. A Word2Vec model is build to represent words as "concepts". Unfortunately, plotting words space on 2D (after PCA) does not enable to observe clear cleasters. But the model works well, as it can get similar words togethers. The tweets are then represented in the words space (clusters cannot be observed). A first draft of a classifier is done.
 
 Notebooks:
+
     * Poll_Description_Analysis: This notebooks analyzes the election polls and introduces the research of correlation with the tweets.
     * TrumpPresidency: Introduces Trump's approval ratings, a "key_hashtags" dataframe useful to understand trending topic and a preliminary version of the "events" dataframe to understand tweet density peaks. 
     * Word2vec: Imports and cleans the tweet datatsets and analyzes the contents. 
