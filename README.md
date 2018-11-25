@@ -34,7 +34,7 @@ For now, we have no corelation.
 **To do:**
   * explore different time-shift for the correlation (to confim that there are no correlations).
   * Try different variables that could correlate with the polls.
-  * Focus more on the hastags. We are building a list of key events that happened during the campaign/ Trump presidency.
+  * Focus more on the hastags. We are building a list of key events that happened during the campaign/ Trump presidency. We are also building a method de highlight the most used tweets per day. This can help providing insight into the cause of big spikes.
   * Try to find a discriminative dimensions in the Word2Vec space that could differentiate Right vs Left trolls.
   
 
