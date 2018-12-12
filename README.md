@@ -45,4 +45,7 @@ Notebooks:
   * Try to find a discriminative dimensions in the Word2Vec space that could differentiate Right vs Left trolls.
   
 
-# Questions for TAs
+# Contribution of Each Member 
+  * **Nicolas Gandar** : Datastory Writting
+  * **Jean-Baptiste Prost** : Datastory Writting
+  * **Antoine Spahr** : Polls Descriptive Analysis / D3 Plots / WebPage construction / Datastory Writting
