@@ -49,3 +49,20 @@ Notebooks:
   * **Nicolas Gandar** : Datastory Writting
   * **Jean-Baptiste Prost** : Datastory Writting
   * **Antoine Spahr** : Polls Descriptive Analysis / D3 Plots / WebPage construction / Datastory Writting
+
+# `PreProcess_Word2vec_TopWords’
+In this notebook we focused on the treatment of the tweet’s content.
+* First, the tweets are cleaned and tokenized.
+* Then a Word2vec model is used to represent each word in a 200 dimensions vector according to it linguistic context.  We were hopping that the model would enable to observe cluster of similar words. To do so, we reduced to output 9 component with a PCA. We 2d-plotted each combinaison of those nine components but none of them gave a clear clustering. We could assed that the model was effective by simply looking at similar words by their *cosine similarity*.
+* The most popular words, hashtags and mentioning were computed in this notebook. Moreover,  we have assigned a  continuous *score* characterizing each expression by it troll orientation (right or left). this provided additional information on the vocabulary used by the two trolls category.
+* Finally, we displayed the top hashtag per day.
+
+
+`WebScrap`
+In this notebook, we defined the (23)  topics of the tweets.
+* A first short keyword list for each topic was first written. Then, the same Word2vec model was used to extend the list. The model enables to find similar words in our vocabulary. As a result, the lists were enriched by ten folds.
+* As we noticed that each tweets topic over time had spiking behavior, we wanted to understand what were the cause of those peaks. Hence, we implemented an *event detector* function. We defined a adapting threshold to each topic : *mean ± 2.25 * standard deviation* . When a spikes crosses the threshold, the date is retrieved and the corresponding page on [Wiki Portal CurrentEvents](https://en.wikipedia.org/wiki/Portal:Current_events)  is scrapped. Then, we look for potential word matching between the content of the topic list and the content of each paragraph of the web page text. If  a sufficient match occurs, an event is detected. <br> The function could still to be optimized but some very interesting output are provided
+
+`Poll_Descriptive_Analysis` and `TrumpPresidency`
+Those notebook integrates data from several pollsters during the election campaign (autumn 2017) and the Trump’s presidency respectively. They follow the same structure:
+* 
