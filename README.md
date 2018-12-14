@@ -50,7 +50,8 @@ Notebooks:
   * **Jean-Baptiste Prost** : Datastory Writting
   * **Antoine Spahr** : Polls Descriptive Analysis / D3 Plots / WebPage construction / Datastory Writting
 
-`PreProcess_Word2vec_TopWords’
+# Data analysis procedure:
+`PreProcess_Word2vec_TopWords`
 In this notebook we focused on the treatment of the tweet’s content.
 * First, the tweets are cleaned and tokenized.
 * Then a Word2vec model is used to represent each word in a 200 dimensions vector according to it linguistic context.  We were hopping that the model would enable to observe cluster of similar words. To do so, we reduced to output 9 component with a PCA. We 2d-plotted each combinaison of those nine components but none of them gave a clear clustering. We could assed that the model was effective by simply looking at similar words by their *cosine similarity*.
