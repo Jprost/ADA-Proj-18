@@ -31,7 +31,10 @@ We use Wiki Portal Curent Event (https://en.wikipedia.org/wiki/Portal:Current_ev
 Everyone has help/supervised/developped the work of each other
 
 # Data analysis procedure:
-`PreProcess_Word2vec_TopWords`
+
+Out work is gathered in the `Final.ipynb` files that is composed of the following notebooks.
+
+`PreProcess_Word2vec_TopWords.ipynb`
 In this notebook we focused on the treatment of the tweet’s content.
 * First, the tweets are cleaned and tokenized.
 * Then a Word2vec model is used to represent each word in a 200 dimensions vector according to it linguistic context.  We were hopping that the model would enable to observe cluster of similar words. To do so, we reduced to output 9 component with a PCA. We 2d-plotted each combinaison of those nine components but none of them gave a clear clustering. We could assed that the model was effective by simply looking at similar words by their *cosine similarity*.
@@ -39,13 +42,13 @@ In this notebook we focused on the treatment of the tweet’s content.
 * Finally, we displayed the top hashtag per day.
 
 
-`WebScrap`
+`WebScrap.ipynb`
 In this notebook, we defined the (25)  topics of the tweets.
 * A first short keyword list for each topic was first written. Then, the same Word2vec model was used to extend the list. The model enables to find similar words in our vocabulary. As a result, the lists were enriched by ten folds.
 * As we noticed that each tweets topic over time had spiking behavior, we wanted to understand what were the cause of those peaks. Hence, we implemented an *event detector* function. We defined a adapting threshold to each topic : *mean ± 2.25 * standard deviation* . When a spikes crosses the threshold, the date is retrieved and the corresponding page on [Wiki Portal CurrentEvents](https://en.wikipedia.org/wiki/Portal:Current_events)  is scrapped. Then, we look for potential word matching between the content of the topic list and the content of each paragraph of the web page text. If  a sufficient match occurs, an event is detected. <br> The function could still to be optimized but some very interesting output are provided
 
 
-`Poll_Descriptive_Analysis` and `TrumpPresidency`
+`Poll_Descriptive_Analysis.ipynb` and `TrumpPresidency.ipynb`
 Those notebook integrates data from several pollsters during the election campaign (autumn 2017) and the Trump’s presidency respectively. They follow the same structure:
 * The polls data is extracted and the average over all pollster of a given day is taken 
 * Then the data is smoothend with a rolling mean of 7 days
