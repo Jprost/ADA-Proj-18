@@ -32,7 +32,7 @@ Everyone has help/supervised/developped the work of each other
 
 # Data analysis procedure:
 
-Out work is gathered in the `Final.ipynb` files that is composed of the following notebooks.
+Out work is gathered in the `Final.ipynb` files that is composed of the following notebooks (each notebook can be found it the `Notebooks` folder).
 
 `PreProcess_Word2vec_TopWords.ipynb`
 In this notebook we focused on the treatment of the tweet’s content.
